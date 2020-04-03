@@ -203,15 +203,12 @@
 }
 
 @media (min-width: $desktop-width) {
-  .footer {
-    min-width: 1920px;
-  }
-
   .footer__wrapper {
     position: relative;
     flex-direction: row;
-    justify-content: center;
-    margin-left: -525px;
+    width: 1440px;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-bottom: 14px;
     border-bottom: 1px solid rgba(98, 105, 98, 0.2);
   }
@@ -226,7 +223,7 @@
     width: 400px;
     padding-right: 23px;
     align-items: flex-start;
-    padding-left: 252px;
+    padding-left: 12px;
   }
 
   .footer__logo {
@@ -244,13 +241,19 @@
     }
 
     &--desktop-logo {
-      margin-left: 72px;
+      margin-left: 74px;
+      margin-right: 144px;
     }
   }
 
   .footer__accordion {
     padding-top: 27px;
     border-bottom: none;
+    overflow: hidden;
+  }
+
+  .footer__accordion-list {
+    width: auto;
   }
 
   .footer__accordion-link {
@@ -262,19 +265,25 @@
     }
   }
 
+  .footer__accordion-sub--margin-left {
+    width: 350px;
+    margin-left: 157px;
+    margin-right: 0;
+  }
+
   .footer__agreement {
     position: relative;
-    justify-content: flex-end;
-    padding-left: 252px;
+    justify-content: flex-start;
+    margin-left: 12px;
     padding-top: 14px;
   }
 
   .footer__agreement-copyright {
-    margin-left: 408px;
+    margin-left: 0;
   }
 
   .footer__link-agreement {
     margin-bottom: 12px;
-    margin-left: 143px;
+    margin-right: 406px;
   }
 }

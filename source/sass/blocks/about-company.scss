@@ -106,7 +106,7 @@
     padding-top: 45px;
     padding-bottom: 79px;
     background-size: 215px auto;
-    background-position: 352px 49px;
+    background-position: 142px 49px;
 
     &::before {
       @include pseudo;
@@ -123,11 +123,11 @@
   }
 
   .about-company__button {
-    margin-left: 301px;
+    margin-left: 315px;
   }
 
   .about-company__title {
-    margin-left: 301px;
+    margin-left: 315px;
     margin-bottom: 20px;
     font-size: 36px;
     line-height: 51px;
@@ -135,7 +135,7 @@
 
   .about-company__text {
     width: 984px;
-    margin-left: 301px;
+    margin-left: 315px;
     margin-bottom: 20px;
 
     &--height {
@@ -145,7 +145,7 @@
 
   .about-company__text--index-appearance {
     display: block;
-    margin-bottom: 39px;
+    margin-bottom: 40px;
   }
 
   .about-company__text span {

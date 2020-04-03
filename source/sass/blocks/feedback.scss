@@ -218,7 +218,6 @@
 @media (min-width: $desktop-width) {
   .feedback {
     position: relative;
-    min-width: 1920px;
     padding-top: 92px;
     padding-bottom: 84px;
 
@@ -270,19 +269,19 @@
   .feedback__form {
     width: 570px;
     margin-left: auto;
-    margin-right: 121px;
+    margin-right: 135px;
   }
 
   .feedback__title {
     margin-bottom: 9px;
-    margin-right: 151px;
+    margin-right: 165px;
     font-size: 36px;
     line-height: 51px;
     text-align: right;
   }
 
   .feedback__text {
-    margin-left: 653px;
+    margin-left: 667px;
     margin-bottom: 51px;
   }
 

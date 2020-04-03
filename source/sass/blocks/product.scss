@@ -43,20 +43,16 @@
 }
 
 @media (min-width: $desktop-width) {
-  .product {
-    min-width: 1920px;
-  }
-
   .product__wrapper {
     display: flex;
     flex-direction: column;
     padding-top: 89px;
-    padding-bottom: 65px;
+    padding-bottom: 66px;
   }
 
   .product__title {
     width: 850px;
-    margin-left: 121px;
+    margin-left: 136px;
     margin-bottom: 51px;
     font-size: 36px;
     line-height: 51px;
