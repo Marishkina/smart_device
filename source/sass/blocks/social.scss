@@ -1,0 +1,31 @@
+.social {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  list-style: none;
+}
+
+.social__link {
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.social__link--ok {
+  margin-left: 15px;
+  margin-right: 16px;
+}
+
+.social__icon-fb,
+.social__icon-ok,
+.social__icon-vk {
+  fill: #cdcdcd;
+
+  &:active {
+    fill: $blue-color;
+  }
+}
+

@@ -1,0 +1,260 @@
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.product-list__item {
+  display: flex;
+  width: 290px;
+  height: 256px;
+  margin-bottom: 30px;
+}
+
+.product-list__link {
+  position: relative;
+  box-sizing: border-box;
+  width: 290px;
+  height: 256px;
+  text-decoration: none;
+  background-size: 290px 256px;
+  background-repeat: no-repeat;
+  border: 1px solid transparent;
+  cursor: pointer;
+
+  &::after {
+    @include pseudo;
+    bottom: 0;
+    right: 0;
+    width: 63px;
+    height: 63px;
+    background-image: url("../img/icon-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: $blue-color;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus,
+  &:active {
+    border: 1px solid #ffffff;
+  }
+}
+
+.product-list__title {
+  @include roboto;
+  width: 155px;
+  margin-top: 20px;
+  margin-left: 36px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+
+  &--margin-top {
+    margin-top: 30px;
+  }
+}
+
+.no-webp .product-list__link--production,
+.no-js .product-list__link--production {
+  background-image: url("../img/product-background-mobile-1@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/product-background-mobile-1@2x.png");
+  }
+}
+
+.webp .product-list__link--production {
+  background-image: url("../img/product-background-mobile-1@1x.webp");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/product-background-mobile-1@2x.webp");
+  }
+}
+
+.no-webp .product-list__link--installation,
+.no-js .product-list__link--installation {
+  background-image: url("../img/product-background-mobile-2@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/product-background-mobile-2@2x.png");
+  }
+}
+
+.webp .product-list__link--installation {
+  background-image: url("../img/product-background-mobile-2@1x.webp");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/product-background-mobile-2@2x.webp");
+  }
+}
+
+.no-webp .product-list__link--components,
+.no-js .product-list__link--components {
+  background-image: url("../img/product-background-mobile-3@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/product-background-mobile-3@2x.png");
+  }
+}
+
+.webp .product-list__link--components {
+  background-image: url("../img/product-background-mobile-3@1x.webp");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/product-background-mobile-3@2x.webp");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .product-list__item {
+    width: 715px;
+    margin-bottom: 46px;
+  }
+
+  .product-list__link {
+    width: 715px;
+    background-size: 715px 256px;
+  }
+
+  .product-list__title {
+    margin-top: 40px;
+    margin-left: 45px;
+
+    &--margin-top {
+      margin-top: 50px;
+    }
+  }
+
+  .no-webp .product-list__link--production,
+  .no-js .product-list__link--production {
+    background-image: url("../img/product-background-tablet-1@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/product-background-tablet-1@2x.png");
+    }
+  }
+
+  .webp .product-list__link--production {
+    background-image: url("../img/product-background-tablet-1@1x.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/product-background-tablet-1@2x.webp");
+    }
+  }
+
+  .no-webp .product-list__link--installation,
+  .no-js .product-list__link--installation {
+    background-image: url("../img/product-background-tablet-2@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/product-background-tablet-2@2x.png");
+    }
+  }
+
+  .webp .product-list__link--installation {
+    background-image: url("../img/product-background-tablet-2@1x.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/product-background-tablet-2@2x.webp");
+    }
+  }
+
+  .no-webp .product-list__link--components,
+  .no-js .product-list__link--components {
+    background-image: url("../img/product-background-tablet-3@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/product-background-tablet-3@2x.png");
+    }
+  }
+
+  .webp .product-list__link--components {
+    background-image: url("../img/product-background-tablet-3@1x.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/product-background-tablet-3@2x.webp");
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-list {
+    justify-content: space-between;
+    padding-left: 121px;
+    padding-right: 121px;
+  }
+
+  .product-list__item {
+    width: 370px;
+    height: 620px;
+  }
+
+  .product-list__link {
+    width: 370px;
+    height: 620px;
+    background-size: 370px 620px;
+  }
+
+  .product-list__title {
+    margin-top: 50px;
+    margin-left: 44px;
+  }
+
+  .no-webp .product-list__link--production,
+  .no-js .product-list__link--production {
+    background-image: url("../img/product-background-desktop-1@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/product-background-desktop-1@2x.png");
+    }
+  }
+
+  .webp .product-list__link--production {
+    background-image: url("../img/product-background-desktop-1@1x.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/product-background-desktop-1@2x.webp");
+    }
+  }
+
+  .no-webp .product-list__link--installation,
+  .no-js .product-list__link--installation {
+    background-image: url("../img/product-background-desktop-2@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/product-background-desktop-2@2x.png");
+    }
+  }
+
+  .webp .product-list__link--installation {
+    background-image: url("../img/product-background-desktop-2@1x.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/product-background-desktop-2@2x.webp");
+    }
+  }
+
+  .no-webp .product-list__link--components,
+  .no-js .product-list__link--components {
+    background-image: url("../img/product-background-desktop-3@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/product-background-desktop-3@2x.png");
+    }
+  }
+
+  .webp .product-list__link--components {
+    background-image: url("../img/product-background-desktop-3@1x.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/product-background-desktop-3@2x.webp");
+    }
+  }
+}

@@ -1,0 +1,154 @@
+.about-company {
+  padding-top: 8px;
+  padding-bottom: 35px;
+}
+
+.about-company__title {
+  @include roboto;
+  margin-top: 0;
+  margin-bottom: 21px;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 39px;
+  color: $text-color;
+}
+
+.about-company__text {
+  @include mono;
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+
+  &--height {
+    margin-bottom: 28px;
+  }
+
+  &--index-appearance {
+    display: none;
+  }
+}
+
+.about-company__button {
+  @include button;
+  display: block;
+  width: 180px;
+  height: 45px;
+  margin-bottom: 30px;
+  margin-left: 2px;
+  padding-top: 14px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: $blue-color;
+  cursor: pointer;
+
+  &:active {
+    color: $blue-color;
+    background-color: #ffffff;
+    border: 1px solid $blue-color;
+    opacity: 1;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .about-company {
+    padding-bottom: 53px;
+    background-size: 244px auto;
+    background-repeat: no-repeat;
+    background-position: -1px 6px;
+  }
+
+  .no-webp .about-company,
+  .no-js .about-company {
+    background-image: url("../img/2005-year@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/2005-year@2x.png");
+    }
+  }
+
+  .webp .about-company {
+    background-image: url("../img/2005-year@1x.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/2005-year@2x.webp");
+    }
+  }
+
+  .about-company__title {
+    margin-left: 185px;
+    margin-bottom: 25px;
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  .about-company__text {
+    margin-left: 188px;
+    margin-bottom: 20px;
+
+    &--height {
+      margin-bottom: 41px;
+    }
+  }
+
+  .about-company__button {
+    margin-left: 188px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-company {
+    position: relative;
+    padding-top: 45px;
+    padding-bottom: 79px;
+    background-size: 215px auto;
+    background-position: 352px 49px;
+
+    &::before {
+      @include pseudo;
+      bottom: -198px;
+      left: 50%;
+      width: 880px;
+      height: 874px;
+      margin-left: -1098px;
+      background-image: url("../img/polygon-desktop-2.svg");
+      background-repeat: no-repeat;
+      background-size: 587px 581px;
+      z-index: -1;
+    }
+  }
+
+  .about-company__button {
+    margin-left: 301px;
+  }
+
+  .about-company__title {
+    margin-left: 301px;
+    margin-bottom: 20px;
+    font-size: 36px;
+    line-height: 51px;
+  }
+
+  .about-company__text {
+    width: 984px;
+    margin-left: 301px;
+    margin-bottom: 20px;
+
+    &--height {
+      margin-bottom: 0;
+    }
+  }
+
+  .about-company__text--index-appearance {
+    display: block;
+    margin-bottom: 39px;
+  }
+
+  .about-company__text span {
+    display: none;
+  }
+}

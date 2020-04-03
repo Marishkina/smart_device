@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "Roboto Condensed";
+  font-weight: normal;
+  font-style: bold;
+  font-display: swap;
+  src: url("../fonts/robotoCondensed-Bold.woff2") format("woff2"), url("../fonts/robotoCondensed-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/robotoCondensed-Regular.woff2") format("woff2"), url("../fonts/robotoCondensed-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PT Mono";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/PTMono-Regular.woff2") format("woff2"), url("../fonts/PTMono-Regular.woff") format("woff");
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Roboto Condensed", "PT Mono", "Arial", monospace, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: $text-color;
+
+  background-color: #ffffff;
+}
+
+.main {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+.footer {
+  flex-shrink: 0;
+}
+
+.container {
+  width: 290px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: 720px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1412px;
+    margin: 0 auto;
+    padding-left: 254px;
+    padding-right: 254px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
