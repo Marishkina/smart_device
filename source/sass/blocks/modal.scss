@@ -83,7 +83,9 @@
       margin: 0;
       opacity: 0;
 
-      &:hover {
+      &:hover,
+      &:focus,
+      &:active {
         opacity: 0;
       }
     }
@@ -163,11 +165,14 @@
   }
 
   .modal__input-wrapper input:focus ~ label,
-  .modal__input-wrapper textarea:focus ~ label {
+  .modal__input-wrapper textarea:focus ~ label,
+  .modal__input-wrapper input:valid ~ label,
+  .modal__input-wrapper textarea:valid ~ label {
     top: -2px;
     font-size: 12px;
     color: rgba(255, 255, 255, 0.5);
   }
+
 
   .modal__button {
     @include button;

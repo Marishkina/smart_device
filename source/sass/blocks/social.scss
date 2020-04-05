@@ -1,6 +1,7 @@
 .social {
   display: flex;
   justify-content: center;
+  margin-top: 12px;
   padding-left: 0;
   list-style: none;
 }
@@ -26,5 +27,11 @@
 
   &:active {
     fill: $blue-color;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .social {
+    margin-top: 31px;
   }
 }

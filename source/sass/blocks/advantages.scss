@@ -1,58 +1,77 @@
 .advantages {
-  padding-top: 37px;
+  position: relative;
+  padding-top: 110px;
   padding-bottom: 30px;
+
+  &::after {
+    @include pseudo;
+    top: 460px;
+    left: 50%;
+    width: 260px;
+    height: 260px;
+    margin-left: 695px;
+    background-image: url("../img/polygon-desktop-4.svg");
+    background-repeat: no-repeat;
+    background-size: 260px 260px;
+    z-index: -1;
+  }
 }
 
 .advantages__wrapper {
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 
   &::before {
     @include pseudo;
-    z-index: -1;
-    bottom: -313px;
-    left: -50%;
-    width: 320px;
-    height: 873px;
-    margin-left: 130px;
-    background-size: 320px 873px;
+    bottom: 388px;
+    left: 50%;
+    width: 338px;
+    height: 338px;
+    margin-left: -776px;
+    background-image: url("../img/polygon-desktop-3.svg");
+    background-size: 260px 260px;
     background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  &::after {
+    @include pseudo;
+    bottom: -90px;
+    left: 50%;
+    width: 558px;
+    height: 562px;
+    margin-left: -163px;
+    background-image: url("../img/polygon-desktop-1.svg");
+    background-size: 558px 562px;
+    z-index: -1;
   }
 }
 
-.no-webp .advantages__wrapper::before,
-.no-js .advantages__wrapper::before {
-  background-image: url("../img/background-advantages-mobile@1x.png");
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/background-advantages-mobile@2x.png");
-  }
-}
-
-.webp .advantages__wrapper::before {
-  background-image: url("../img/background-advantages-mobile@1x.webp");
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/background-advantages-mobile@2x.webp");
-  }
-}
-
-@media (min-width: $tablet-width) {
+@media (max-width: $desktop-width) {
   .advantages {
     padding-top: 54px;
     padding-bottom: 19px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .advantages__wrapper {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;x
 
     &::before {
-      width: 559px;
-      margin-left: 593px;
+      bottom: -311px;
+      width: 759px;
+      height: 873px;
+      margin-left: -174px;
       background-size: 559px 873px;
+    }
+
+    &::after {
+      display: none;
     }
   }
 
@@ -74,40 +93,40 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (max-width: $tablet-width) {
   .advantages {
-    padding-top: 113px;
+    padding-top: 37px;
     padding-bottom: 30px;
   }
 
   .advantages__wrapper {
-    justify-content: flex-start;
-    background-image: url("../img/polygon-desktop-4.svg");
-    background-position: 1651px 347px;
-    background-repeat: no-repeat;
-    background-size: 260px 260px;
-
+    flex-direction: column;
 
     &::before {
-      bottom: 388px;
-      left: 50%;
-      width: 338px;
-      height: 338px;
-      margin-left: -776px;
-      background-image: url("../img/polygon-desktop-3.svg");
-      background-size: 260px 260px;
-    }
-
-    &::after {
       @include pseudo;
-      z-index: -1;
-      bottom: -90px;
-      left: 50%;
-      width: 558px;
-      height: 562px;
-      margin-left: -163px;
-      background-image: url("../img/polygon-desktop-1.svg");
-      background-size: 558px 562px;
+      bottom: -313px;
+      left: -50%;
+      width: 320px;
+      height: 873px;
+      margin-left: 130px;
+      background-size: 320px 873px;
+    }
+  }
+
+  .no-webp .advantages__wrapper::before,
+  .no-js .advantages__wrapper::before {
+    background-image: url("../img/background-advantages-mobile@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/background-advantages-mobile@2x.png");
+    }
+  }
+
+  .webp .advantages__wrapper::before {
+    background-image: url("../img/background-advantages-mobile@1x.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/background-advantages-mobile@2x.webp");
     }
   }
 }
