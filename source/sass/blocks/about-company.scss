@@ -8,15 +8,16 @@
 
   &::before {
     @include pseudo;
-    bottom: -198px;
+    bottom: 103px;
     left: 50%;
-    width: 880px;
-    height: 874px;
-    margin-left: -1098px;
-    background-image: url("../img/polygon-desktop-2.svg");
+    width: 558px;
+    height: 562px;
+    margin-left: -1016px;
+    background-image: url("../img/polygon.svg");
     background-repeat: no-repeat;
-    background-size: 587px 581px;
+    background-size: 558px 562px;
     z-index: -1;
+    transform: rotate(180deg);
   }
 }
 

@@ -37,7 +37,7 @@
 .no-js .footer__logo {
   width: 216px;
   height: 52px;
-  background-image: url("../img/text-logo_dark.svg");
+  background-image: url("../img/logo-footer.svg");
 }
 
 
@@ -139,7 +139,7 @@
     position: relative;
     flex-direction: column;
     width: 720px;
-    padding-bottom: 20px;
+    padding-bottom: 36px;
 
     &::before {
       @include pseudo;

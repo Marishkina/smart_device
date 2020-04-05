@@ -1,4 +1,4 @@
-.advantages-card__wrapper {
+.advantages__card-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -113,7 +113,7 @@
 }
 
 @media (max-width: $desktop-width) {
-  .advantages-card__wrapper {
+  .advantages__card-wrapper {
     justify-content: space-between;
     width: 720px;
     margin-left: 0;
@@ -178,7 +178,7 @@
 
 
 @media (max-width: $tablet-width) {
-  .advantages-card__wrapper {
+  .advantages__card-wrapper {
     width: 290px;
   }
 

@@ -48,25 +48,25 @@
     height: 800px;
     margin-left: 10px;
     background-size: 705px auto, 770px 485px;
+    background-position: 68px 130px, -13px 146px;
     background-repeat: no-repeat, no-repeat;
-    background-position: 68px 130px, -12px 145px;
   }
 }
 
 .no-webp .page-header__wrapper-block::before,
 .no-js .page-header__wrapper-block::before {
-  background-image: url("../img/motherboard-desktop@1x.png"), url("../img/triangle-desktop-ph.svg");
+  background-image: url("../img/motherboard-desktop@1x.png"), url("../img/2-triangle.svg");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/motherboard-desktop@2x.png"), url("../img/triangle-desktop-ph.svg");
+    background-image: url("../img/motherboard-desktop@2x.png"), url("../img/2-triangle.svg");
   }
 }
 
 .webp .page-header__wrapper-block::before {
-  background-image: url("../img/motherboard-desktop@1x.webp"), url("../img/triangle-desktop-ph.svg");
+  background-image: url("../img/motherboard-desktop@1x.webp"), url("../img/2-triangle.svg");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/motherboard-desktop@2x.webp"), url("../img/triangle-desktop-ph.svg");
+    background-image: url("../img/motherboard-desktop@2x.webp"), url("../img/2-triangle.svg");
   }
 }
 
@@ -86,7 +86,7 @@
 .no-js .page-header__logo {
   width: 202px;
   height: 52px;
-  background-image: url("../img//text-logo_light.svg");
+  background-image: url("../img/logo-header.svg");
 }
 
 .page-header__mail-svg {
@@ -327,14 +327,13 @@
     margin-bottom: 117px;
 
     &::before {
-      top: 96px;
-      left: 50%;
-      width: 265px;
-      height: 345px;
-      margin-left: 125px;
-      background-size: 261px 344px;
-      background-repeat: no-repeat;
-      background-position: 0 0;
+      top: 44px;
+      width: 700px;
+      height: 420px;
+      margin-left: -25px;
+      background-size: 261px 344px, 700px 384px;
+      background-position: 150px 50px, -12px 21px;
+      background-repeat: no-repeat, no-repeat;
     }
 
     &::after {
@@ -345,18 +344,18 @@
 
   .no-webp .page-header__wrapper-block::before,
   .no-js .page-header__wrapper-block::before {
-    background-image: url("../img/motherboard-tablet@1x.png");
+    background-image: url("../img/motherboard-tablet@1x.png"), url("../img/2-triangle.svg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/motherboard-tablet@2x.png");
+      background-image: url("../img/motherboard-tablet@2x.png"), url("../img/2-triangle.svg");
     }
   }
 
   .webp .page-header__wrapper-block::before {
-    background-image: url("../img/motherboard-tablet@1x.webp");
+    background-image: url("../img/motherboard-tablet@1x.webp"), url("../img/2-triangle.svg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/motherboard-tablet@2x.webp");
+      background-image: url("../img/motherboard-tablet@2x.webp"), url("../img/2-triangle.svg");
     }
   }
 
@@ -476,29 +475,32 @@
     }
 
     &::before {
-      top: 75px;
+      top: 35px;
       left: 50%;
-      width: 295px;
-      height: 220px;
-      margin-left: -134px;
-      background-size: 295px 220px;
+      width: 1000px;
+      height: 400px;
+      margin-left: -139px;
+      background-position: 4px 40px, -16px 18px;
+      background-size: 295px 220px, 786px 367px;
+      background-repeat: no-repeat, no-repeat;
+      z-index: 1;
     }
   }
 
   .no-webp .page-header__wrapper-block::before,
   .no-js .page-header__wrapper-block::before {
-    background-image: url("../img/motherboard-mobile@1x.png");
+    background-image: url("../img/motherboard-mobile@1x.png"), url("../img/2-triangle.svg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/motherboard-mobile@2x.png");
+      background-image: url("../img/motherboard-mobile@2x.png"), url("../img/2-triangle.svg");
     }
   }
 
   .webp .page-header__wrapper-block::before {
-    background-image: url("../img/motherboard-mobile@1x.webp");
+    background-image: url("../img/motherboard-mobile@1x.webp"), url("../img/2-triangle.svg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/motherboard-mobile@2x.webp");
+      background-image: url("../img/motherboard-mobile@2x.webp"), url("../img/2-triangle.svg");
     }
   }
 
@@ -531,12 +533,14 @@
   }
 
   .page-header__title {
+    position: relative;
     width: 290px;
     margin-bottom: 27px;
     margin-left: -63px;
     font-size: 40px;
     line-height: 47px;
     letter-spacing: 3.1px;
+    z-index: 2;
   }
 
   .page-header__text {
