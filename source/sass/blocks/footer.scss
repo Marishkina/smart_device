@@ -30,6 +30,17 @@
   }
 }
 
+.no-js .footer__logo-img {
+  display: none;
+}
+
+.no-js .footer__logo {
+  width: 216px;
+  height: 52px;
+  background-image: url("../img/text-logo_dark.svg");
+}
+
+
 .footer__copyright--tablet-width {
   display: none;
 }
