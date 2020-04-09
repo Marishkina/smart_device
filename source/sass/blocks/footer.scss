@@ -1,10 +1,16 @@
+.footer {
+  flex-shrink: 0;
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
 .footer__wrapper {
   display: flex;
   width: 1430px;
   margin: 0 auto;
   padding-left: 5px;
   padding-right: 5px;
-  padding-bottom: 33px;
+  padding-bottom: 44px;
 }
 
 .footer__social {
@@ -16,21 +22,16 @@
   flex-direction: column;
   align-items: flex-start;
   width: 383px;
-  padding-top: 2px;
+  padding-top: 0;
   padding-left: 6px;
 }
 
 .footer__logo {
   display: block;
   margin-bottom: 36px;
-  cursor: pointer;
-
-  &:hover {
-    opacity: 0.7;
-  }
 }
 
-.no-js .footer__logo-img {
+.no-js .footer__logo img {
   display: none;
 }
 
@@ -45,7 +46,7 @@
   display: none;
 }
 
-.footer__copyright {
+.footer__agreement-wrapper p {
   @include mono;
   position: relative;
   margin-top: 0;
@@ -57,20 +58,20 @@
   letter-spacing: 0.5px;
   text-transform: uppercase;
   text-align: center;
+}
 
-  &--desktop,
-  &--desktop-logo {
-    margin-left: 0;
-  }
+.footer__copyright--desktop,
+.footer__copyright--desktop-logo {
+  margin-left: 0;
+}
 
-  &--desktop-logo {
-    margin-left: 74px;
-    margin-right: 144px;
-  }
+.footer__copyright--desktop-logo {
+  margin-left: 74px;
+  margin-right: 144px;
 }
 
 .footer__accordion {
-  padding-top: 50px;
+  padding-top: 53px;
 }
 
 .footer__accordion-list {
@@ -185,6 +186,10 @@
 
   .footer__accordion-sub--margin-left {
     margin-left: 86px;
+
+    & h2 {
+      margin-bottom: 20px;
+    }
   }
 
   .footer__copyright {

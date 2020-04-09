@@ -1,13 +1,16 @@
-.advantages__card-wrapper {
+.advantages-card__wrapper {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
   width: 1170px;
 }
 
 .advantages-card {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  width: 570px;
   margin-bottom: 30px;
   margin-left: 1px;
   padding-top: 38px;
@@ -50,7 +53,7 @@
   fill: $blue-color;
 }
 
-.advantages-card:hover .advantages-card__title {
+.advantages-card:hover h2 {
   color: #ffffff;
 }
 
@@ -58,7 +61,7 @@
   fill: #ffffff;
 }
 
-.advantages-card__title {
+.advantages-card h2 {
   @include roboto;
   width: 310px;
   margin-top: 19px;
@@ -67,23 +70,23 @@
   line-height: 34px;
   font-weight: normal;
   color: $blue-color;
-
-  &--margin {
-    margin-top: 20px;
-    margin-bottom: 16px;
-  }
-
-  &--margin-top {
-    margin-top: 20px;
-  }
-
-  &--margin-bottom {
-    margin-top: 20px;
-    margin-bottom: 16px;
-  }
 }
 
-.advantages-card__description {
+.advantages-card--providers h2 {
+  margin-top: 20px;
+}
+
+.advantages-card--privicy h2 {
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+
+.advantages-card--personalization h2 {
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+
+.advantages-card p {
   @include mono;
   width: 482px;
   margin-top: 0;
@@ -91,10 +94,10 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
+}
 
-  &--width {
-    width: 483px;
-  }
+.advantages-card--providers p {
+  width: 483px;
 }
 
 .advantages-card__icon-svg--hired {
@@ -113,7 +116,7 @@
 }
 
 @media (max-width: $desktop-width) {
-  .advantages__card-wrapper {
+  .advantages-card__wrapper {
     justify-content: space-between;
     width: 720px;
     margin-left: 0;
@@ -143,42 +146,40 @@
     }
   }
 
-  .advantages-card__title {
+  .advantages-card h2 {
     width: 310px;
     margin-top: 6px;
     margin-bottom: 10px;
-
-
-    &--margin {
-      margin-top: 8px;
-      margin-bottom: 13px;
-    }
-
-    &--margin-top {
-      margin-top: 8px;
-    }
-
-    &--margin-bottom {
-      margin-top: 7px;
-      margin-bottom: 7px;
-    }
   }
 
-  .advantages-card__description {
+  .advantages-card--providers h2 {
+    margin-top: 8px;
+  }
+
+  .advantages-card--privicy h2 {
+    margin-top: 8px;
+    margin-bottom: 13px;
+  }
+
+  .advantages-card--personalization h2 {
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+
+  .advantages-card p {
     width: 295px;
     margin-top: 0;
     margin-bottom: 0;
+  }
 
-
-    &--width {
-      width: 290px;
-    }
+  .advantages-card--providers p {
+    width: 290px;
   }
 }
 
 
 @media (max-width: $tablet-width) {
-  .advantages__card-wrapper {
+  .advantages-card__wrapper {
     width: 290px;
   }
 
@@ -203,34 +204,34 @@
     }
   }
 
-  .advantages-card__title {
+  .advantages-card h2 {
 
     width: 245px;
     margin-top: 11px;
     margin-bottom: 10px;
     font-size: 20px;
     line-height: 28px;
-
-    &--margin {
-      margin-top: 7px;
-    }
-
-    &--margin-top {
-      margin-top: 14px;
-    }
-
-    &--margin-bottom {
-      margin-bottom: 12px;
-    }
   }
 
-  .advantages-card__description {
+  .advantages-card--providers h2 {
+    margin-top: 14px;
+  }
+
+  .advantages-card--privicy h2 {
+    margin-top: 7px;
+  }
+
+  .advantages-card--personalization h2 {
+    margin-bottom: 12px;
+  }
+
+  .advantages-card p {
     width: 245px;
     margin-top: 0;
     margin-bottom: 10px;
+  }
 
-    &--width {
-      width: 250px;
-    }
+  .advantages-card--providers p {
+    width: 250px;
   }
 }

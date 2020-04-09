@@ -13,7 +13,7 @@
   position: relative;
   white-space: nowrap;
   width: 360px;
-  margin-top: 5px;
+  margin-top: 0;
   margin-bottom: 0;
   font-size: 15px;
   font-weight: normal;
@@ -21,7 +21,7 @@
   color: rgba(27, 45, 55, 0.5);
 }
 
-.sub__item-title {
+.sub h2 {
   @include roboto;
   display: block;
   width: 200px;
@@ -33,10 +33,6 @@
   letter-spacing: 0.8px;
   color: rgba(27, 45, 55, 1);
   text-transform: uppercase;
-
-  &--margin-bottom {
-    margin-bottom: 20px;
-  }
 }
 
 .sub__link {
@@ -66,13 +62,9 @@
     height: auto;
   }
 
-  .sub__item-title {
+  .sub h2 {
     margin-top: 29px;
     margin-bottom: 25px;
-
-    &--margin-bottom {
-      margin-bottom: 20px;
-    }
   }
 }
 
@@ -98,7 +90,7 @@
     white-space: normal;
   }
 
-  .sub__item-title {
+  .sub h2 {
     margin-top: 0;
     margin-bottom: 25px;
   }

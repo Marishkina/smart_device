@@ -10,7 +10,7 @@
     left: 50%;
     width: 550px;
     height: 300px;
-    margin-left: -620px;
+    margin-left: -613px;
     background-size: 511px 288px;
     background-repeat: no-repeat;
     background-position: 10px 0;
@@ -23,7 +23,7 @@
     left: 50%;
     width: 625px;
     height: 630px;
-    margin-left: -773px;
+    margin-left: -768px;
     background-image: url("../img/2-triangle.svg");
     background-size: 610px 630px;
     background-repeat: no-repeat;
@@ -58,7 +58,7 @@
   margin-right: 130px;
 }
 
-.feedback__title {
+.feedback__form-wrapper h2 {
   @include roboto;
   margin-top: 0;
   margin-bottom: 9px;
@@ -70,7 +70,7 @@
   color: #ffffff;
 }
 
-.feedback__text {
+.feedback__form-wrapper p {
   @include mono;
   margin-top: 0;
   margin-bottom: 51px;
@@ -254,7 +254,7 @@
     display: none;
   }
 
-  .feedback__title {
+  .feedback__form-wrapper h2 {
     margin-bottom: 16px;
     padding-left: 63px;
     font-size: 32px;
@@ -262,7 +262,7 @@
     text-align: left;
   }
 
-  .feedback__text {
+  .feedback__form-wrappe p {
     width: 672px;
     margin-left: 0;
     margin-bottom: 54px;
@@ -304,7 +304,7 @@
     padding-bottom: 43px;
   }
 
-  .feedback__title {
+  .feedback__form-wrapper h2 {
     width: 290px;
     margin-bottom: 13px;
     padding-left: 0;
@@ -312,7 +312,7 @@
     line-height: 39px;
   }
 
-  .feedback__text {
+  .feedback__form-wrappe p {
     width: 290px;
     margin-bottom: 25px;
     padding-left: 0;

@@ -1,18 +1,18 @@
 .product {
-  padding-bottom: 46px;
+  padding-bottom: 15px;
   background-color: #1b2d37;
 }
 
 .product__wrapper {
   display: flex;
   flex-direction: column;
-  padding-top: 89px;
+  padding-top: 88px;
   padding-bottom: 66px;
 }
 
-.product__title {
+.product__wrapper h2 {
   @include roboto;
-  width: 850px;
+  width: 870px;
   margin-top: 0;
   margin-bottom: 51px;
   margin-left: 130px;
@@ -36,7 +36,7 @@
     padding-bottom: 1px;
   }
 
-  .product__title {
+  .product__wrapper h2 {
     width: 613px;
     margin-bottom: 48px;
     margin-left: 0;
@@ -55,7 +55,7 @@
     padding-bottom: 19px;
   }
 
-  .product__title {
+  .product__wrapper h2 {
     width: 290px;
     margin-top: 0;
     margin-bottom: 40px;
