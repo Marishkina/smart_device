@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 500px;
   height: 110px;
   padding-left: 0;
   list-style: none;
@@ -11,8 +10,6 @@
 .sub__text {
   @include mono;
   position: relative;
-  white-space: nowrap;
-  width: 360px;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 15px;
@@ -66,13 +63,17 @@
     margin-top: 29px;
     margin-bottom: 25px;
   }
+
+  .sub__text {
+    white-space: nowrap;
+  }
 }
 
 @media (max-width: $tablet-width) {
   .sub {
     position: relative;
-    padding-top: 22px;
-    padding-bottom: 8px;
+    padding-top: 21px;
+    padding-bottom: 6px;
 
     &::after {
       @include pseudo;
@@ -92,7 +93,7 @@
 
   .sub h2 {
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
 
   .sub__list {

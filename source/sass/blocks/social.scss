@@ -1,7 +1,7 @@
 .social {
   display: flex;
-  // justify-content: center;
-  margin-top: 12px;
+  flex-wrap: wrap;
+  margin-top: 18px;
   padding-left: 0;
   list-style: none;
 }
@@ -26,8 +26,27 @@
   }
 }
 
+@media (max-width: $desktop-width) {
+  .social {
+    justify-content: flex-end;
+    margin-top: 12px;
+  }
+
+  .social__link {
+    margin-right: 0;
+    margin-left: 15px;
+  }
+}
+
 @media (max-width: $tablet-width) {
   .social {
+    justify-content: flex-start;
     margin-top: 31px;
+    margin-left: 15px;
+  }
+
+  .social__link {
+    margin-right: 15px;
+    margin-left: 0;
   }
 }

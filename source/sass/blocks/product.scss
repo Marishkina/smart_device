@@ -12,10 +12,10 @@
 
 .product__wrapper h2 {
   @include roboto;
-  width: 870px;
+  min-width: 870px;
   margin-top: 0;
   margin-bottom: 51px;
-  margin-left: 130px;
+  margin-left: 9%;
   font-size: 36px;
   line-height: 51px;
   letter-spacing: 0;
@@ -32,12 +32,13 @@
   }
 
   .product__wrapper {
+    width: 720px;
     padding-top: 50px;
     padding-bottom: 1px;
   }
 
   .product__wrapper h2 {
-    width: 613px;
+    min-width: 613px;
     margin-bottom: 48px;
     margin-left: 0;
     font-size: 32px;
@@ -48,22 +49,26 @@
 @media (max-width: $tablet-width) {
   .product {
     padding-bottom: 0;
+    padding-right: 0;
   }
 
   .product__wrapper {
+    box-sizing: border-box;
+    width: 100%;
     padding-top: 51px;
     padding-bottom: 19px;
+    padding-left: 22px;
   }
 
   .product__wrapper h2 {
-    width: 290px;
+    min-width: 290px;
     margin-top: 0;
     margin-bottom: 40px;
-    margin-left: 11px;
+    margin-left: 4px;
     font-size: 24px;
     line-height: 39px;
 
-    letter-spacing: 1.7px;
+    letter-spacing: 1.9px;
 
     &-span {
       letter-spacing: 2px;

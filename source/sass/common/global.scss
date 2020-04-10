@@ -55,7 +55,8 @@ body {
 }
 
 .container {
-  width: 1430px;
+  min-width: 1024px;
+  max-width: 1430px;
   margin: 0 auto;
   padding-left: 5px;
   padding-right: 5px;
@@ -63,7 +64,8 @@ body {
 
 @media (max-width: $desktop-width) {
   .container {
-    width: 720px;
+    min-width: 720px;
+    max-width: 1023px;
     margin: 0 auto;
     padding-left: 24px;
     padding-right: 24px;
@@ -72,8 +74,11 @@ body {
 
 @media (max-width: $tablet-width) {
   .container {
-    width: 290px;
+    min-width: 290px;
+    max-width: 650px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
