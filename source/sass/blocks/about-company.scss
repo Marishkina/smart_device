@@ -41,7 +41,7 @@
 .about-company h2 {
   @include roboto;
   margin-top: 0;
-  margin-left: 21.6%;
+  margin-left: 21.7%;
   margin-bottom: 20px;
   font-size: 36px;
   line-height: 51px;
@@ -51,8 +51,9 @@
   @include mono;
   display: flex;
   max-width: 984px;
+  margin-top: 21px;
   margin-left: 21.7%;
-  margin-bottom: 21px;
+  margin-bottom: 0;
   padding-right: 10px;
   font-weight: normal;
   font-size: 16px;
@@ -60,13 +61,8 @@
   box-sizing: border-box;
 }
 
-.about-company .about-company__text--height {
-  margin-bottom: 0;
-}
-
-.about-company .about-company__text--index-appearance {
+.about-company p:last-of-type {
   margin-top: 0;
-  margin-bottom: 18px;
 }
 
 .about-company span {
@@ -78,8 +74,9 @@
   display: block;
   width: 180px;
   height: 45px;
+  margin-top: 38px;
   margin-bottom: 30px;
-  margin-left: 21.52%;
+  margin-left: 21.7%;
   padding-top: 14px;
   font-size: 14px;
   line-height: 16px;
@@ -103,7 +100,7 @@
     padding-top: 5px;
     padding-bottom: 53px;
     background-size: 250px auto;
-    background-position: -10px 5px;
+    background-position: -8px 5px;
 
     &::before {
       display: none;
@@ -119,25 +116,21 @@
 
   .about-company p {
     display: block;
-    margin-left: 185px;
-    margin-bottom: 20px;
+    margin-left: 188px;
     padding-right: 0;
-  }
-
-  .about-company .about-company__text--height {
-    margin-bottom: 41px;
   }
 
   .about-company span {
     display: inline-block;
   }
 
-  .about-company .about-company__text--index-appearance {
+  .about-company p:last-of-type {
     display: none;
   }
 
   .about-company__button {
-    margin-left: 188px;
+    margin-top: 40px;
+    margin-left: 189px;
   }
 }
 
@@ -175,7 +168,7 @@
   }
 
   .about-company__button {
-    margin-top: -13px;
+    margin-top: -12px;
     margin-left: 2px;
   }
 }

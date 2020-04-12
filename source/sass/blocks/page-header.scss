@@ -432,7 +432,7 @@
   .page-header__proposal h1 {
     width: 340px;
     margin-bottom: 28px;
-    margin-left: 0;
+    margin-left: -61px;
     font-size: 60px;
     line-height: 70px;
     letter-spacing: 4.7px;
@@ -441,7 +441,7 @@
   .page-header__proposal p {
     width: 356px;
     margin-bottom: 55px;
-    margin-left: 51px;
+    margin-left: -10px;
     padding-left: 0;
     font-size: 18px;
     line-height: 28px;
@@ -456,7 +456,7 @@
 
   .page-header__button {
     width: 379px;
-    margin-left: 51px;
+    margin-left: -10px;
   }
 
   .page-header__button-text {
@@ -603,7 +603,7 @@
     &::before {
       top: 15px;
       left: 50%;
-      margin-left: -72%;
+      margin-left: -71.5%;
     }
   }
 

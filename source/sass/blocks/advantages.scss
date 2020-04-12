@@ -4,8 +4,8 @@
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 110px;
-  padding-left: 6%;
-  padding-right: 4.8%;
+  padding-left: 6.7%;
+  padding-right: 6.7%;
   padding-bottom: 30px;
   box-sizing: border-box;
 
@@ -27,7 +27,7 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 
   &::after {
     @include pseudo;
@@ -59,11 +59,10 @@
 
 @media (max-width: $desktop-width) {
   .advantages {
-    width: 720px;
     padding-top: 54px;
-    padding-bottom: 19px;
-    padding-left: 1px;
-    padding-right: 0;
+    padding-bottom: 18px;
+    padding-left: 3.12%;
+    padding-right: 3.12%;
 
     &::after {
       display: none;
@@ -71,7 +70,7 @@
   }
 
   .advantages__wrapper {
-    justify-content: space-between;
+    justify-content: center;
 
     &::before {
       bottom: -155px;
@@ -93,12 +92,12 @@
   .advantages {
     width: 100%;
     padding-top: 37px;
-    padding-bottom: 30px;
-    padding-left: 15px;
+    padding-bottom: 32px;
+    padding-left: 4.7%;
+    padding-right: 4.7%;
   }
 
   .advantages__wrapper {
-    justify-content: center;
     width: 100%;
 
     &::before {

@@ -7,7 +7,7 @@
   list-style: none;
 }
 
-.sub__text {
+.sub p {
   @include mono;
   position: relative;
   margin-top: 0;
@@ -64,7 +64,7 @@
     margin-bottom: 25px;
   }
 
-  .sub__text {
+  .sub p {
     white-space: nowrap;
   }
 }
@@ -85,7 +85,7 @@
     }
   }
 
-  .sub__text {
+  .sub p {
     width: 215px;
     margin-bottom: 0;
     white-space: normal;
@@ -93,10 +93,11 @@
 
   .sub h2 {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
   }
 
   .sub__list {
+    padding-top: 5px;
     padding-bottom: 27px;
   }
 }

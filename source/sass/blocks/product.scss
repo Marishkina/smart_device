@@ -12,7 +12,6 @@
 
 .product__wrapper h2 {
   @include roboto;
-  min-width: 870px;
   margin-top: 0;
   margin-bottom: 51px;
   margin-left: 9%;
@@ -32,13 +31,12 @@
   }
 
   .product__wrapper {
-    width: 720px;
     padding-top: 50px;
     padding-bottom: 1px;
   }
 
   .product__wrapper h2 {
-    min-width: 613px;
+    min-width: 610px;
     margin-bottom: 48px;
     margin-left: 0;
     font-size: 32px;
@@ -54,10 +52,9 @@
 
   .product__wrapper {
     box-sizing: border-box;
-    width: 100%;
     padding-top: 51px;
     padding-bottom: 19px;
-    padding-left: 22px;
+    padding-left: 4.5%;
   }
 
   .product__wrapper h2 {
