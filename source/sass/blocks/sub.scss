@@ -82,8 +82,8 @@
     &::after {
       @include pseudo;
       bottom: 6px;
-      left: -238px;
-      width: 767px;
+      left: -100px;
+      width: 1000px;
       height: 1px;
       background-color: rgba(98, 105, 98, 0.2);
     }
@@ -96,11 +96,14 @@
   }
 
   .sub h2 {
-    margin-top: 0;
+    width: 290px;
+    margin: 0 auto;
     margin-bottom: 28px;
   }
 
   .sub__list {
+    width: 290px;
+    margin: 0 auto;
     padding-top: 5px;
     padding-bottom: 27px;
   }

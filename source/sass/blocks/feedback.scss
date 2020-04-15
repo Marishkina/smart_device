@@ -6,48 +6,31 @@
 }
 
 .feedback__form-wrapper {
-  &::before {
-    @include pseudo;
-    top: 161px;
-    left: 50%;
-    width: 570px;
-    height: 300px;
-    margin-left: -620px;
-    background-size: 511px 288px;
-    background-repeat: no-repeat;
-    background-position: 10px 0;
-    z-index: 2;
-  }
-
   &::after {
     @include pseudo;
-    top: 41px;
+    top: 274px;
     left: 50%;
-    width: 625px;
-    height: 630px;
-    margin-left: -773px;
-    background-image: url("../img/2-triangle.svg");
-    background-size: 610px 630px;
+    width: 295px;
+    height: 350px;
+    margin-left: 747px;
+    background-image: url("../img/small-triangle.svg");
     background-repeat: no-repeat;
-    background-position: 10px -20px;
-    z-index: 1;
+    background-size: 280px 500px;
+    background-position: 10px -74px;
   }
-}
 
-.no-webp .feedback__form-wrapper::before,
-.no-js .feedback__form-wrapper::before {
-  background-image: url("../img/paper_airplane@1x.png");
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/paper_airplane@2x.png");
-  }
-}
-
-.webp .feedback__form-wrapper::before {
-  background-image: url("../img/paper_airplane@1x.webp");
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/paper_airplane@2x.webp");
+  &::before {
+    @include pseudo;
+    top: 86px;
+    left: 50%;
+    width: 200px;
+    height: 220px;
+    margin-left: 683px;
+    background-image: url("../img/small-triangle.svg");
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    background-position: 10px 10px;
+    transform: rotate(180deg);
   }
 }
 
@@ -60,31 +43,48 @@
   margin-left: auto;
   margin-right: 9%;
 
-  &::after {
-    @include pseudo;
-    top: 48px;
-    left: 50%;
-    width: 295px;
-    height: 350px;
-    margin-left: 447px;
-    background-image: url("../img/small-triangle.svg");
-    background-repeat: no-repeat;
-    background-size: 280px 500px;
-    background-position: 10px -74px;
-  }
-
   &::before {
     @include pseudo;
-    top: -140px;
+    top: -64px;
     left: 50%;
-    width: 200px;
-    height: 220px;
-    margin-left: 382px;
-    background-image: url("../img/small-triangle.svg");
+    width: 570px;
+    height: 300px;
+    margin-left: -920px;
+    background-size: 511px 288px;
     background-repeat: no-repeat;
-    background-size: 200px 200px;
-    background-position: 10px 10px;
-    transform: rotate(180deg);
+    background-position: 10px 0;
+    z-index: 2;
+  }
+
+  &::after {
+    @include pseudo;
+    top: -183px;
+    left: 50%;
+    width: 625px;
+    height: 630px;
+    margin-left: -1075px;
+    background-image: url("../img/2-triangle.svg");
+    background-size: 610px 630px;
+    background-repeat: no-repeat;
+    background-position: 10px -20px;
+    z-index: 1;
+  }
+}
+
+.no-webp .feedback__form::before,
+.no-js .feedback__form::before {
+  background-image: url("../img/paper_airplane@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/paper_airplane@2x.png");
+  }
+}
+
+.webp .feedback__form::before {
+  background-image: url("../img/paper_airplane@1x.webp");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/paper_airplane@2x.webp");
   }
 }
 
@@ -94,19 +94,20 @@
   margin-top: 0;
   margin-bottom: 9px;
   margin-left: auto;
-  margin-right: 11.1%;
+  margin-right: 9.4%;
   font-size: 36px;
   font-weight: normal;
   line-height: 51px;
-  text-align: right;
   color: #ffffff;
 }
 
 .feedback__form-wrapper p {
   @include mono;
+  width: 570px;
   margin-top: 0;
   margin-bottom: 51px;
-  margin-left: 51%;
+  margin-left: auto;
+  margin-right: 9.1%;
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;
@@ -262,33 +263,6 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
-@media (max-width: 1439px) {
-  .feedback__form-wrapper {
-    & h2 {
-      margin: 0 auto;
-      text-align: left;
-    }
-
-    & p {
-      width: 570px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    &::before {
-      display: none;
-    }
-
-    &::after {
-      display: none;
-    }
-  }
-
-  .feedback__form {
-    margin: 0 auto;
-  }
-}
-
 @media (max-width: $desktop-width) {
   .feedback {
     padding-top: 80px;
@@ -323,7 +297,6 @@
     margin-left: 8.85%;
     font-size: 32px;
     line-height: 45px;
-    text-align: left;
   }
 
   .feedback__form-wrapper p {

@@ -197,10 +197,10 @@
 
   .footer__accordion-sub--margin-left {
     margin-left: 33px;
+  }
 
-    & h2 {
-      margin-bottom: 20px;
-    }
+  .footer__accordion-sub--margin-left h2 {
+    margin-bottom: 20px;
   }
 
   .footer__agreement-wrapper p:first-of-type {
@@ -237,7 +237,7 @@
 
     &::before {
       top: 260px;
-      left: -366px;
+      left: -100px;
     }
   }
 
@@ -266,21 +266,16 @@
 
   .footer__accordion-list {
     flex-direction: column;
-    width: 290px;
+    width: 100%;
     margin: 0 auto;
   }
 
   .footer__accordion-sub {
-    width: 290px;
-  }
-
-  .footer__accordion-link {
-    width: 360px;
-    margin-top: 38px;
+    width: 100%;
   }
 
   .footer__accordion-sub--margin-left {
-    width: 290px;
+    width: 100%;
     margin-left: 0;
   }
 
@@ -311,7 +306,7 @@
 @media (max-width: $mobile-width-only) {
   .footer__accordion .sub > .footer__accordion-link::before {
     @include pseudo;
-    top: 20px;
+    top: 30px;
     left: 50%;
     width: 16px;
     height: 16px;
@@ -323,7 +318,7 @@
 
   .footer__accordion .sub > .footer__accordion-link.active::before {
     @include pseudo;
-    top: 28px;
+    top: 38px;
     left: 50%;
     width: 16px;
     height: 16px;
@@ -336,5 +331,13 @@
   .no-js .footer__accordion .sub > .footer__accordion-link::before,
   .no-js .footer__accordion .sub > .footer__accordion-link.active::before {
     display: none;
+  }
+
+  .footer__accordion-link {
+    @include pseudo;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 74px;
   }
 }
