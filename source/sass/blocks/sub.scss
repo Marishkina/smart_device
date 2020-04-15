@@ -7,6 +7,10 @@
   list-style: none;
 }
 
+.sub__list--height {
+  height: 125px;
+}
+
 .sub p {
   @include mono;
   position: relative;

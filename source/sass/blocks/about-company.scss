@@ -3,7 +3,7 @@
   padding-top: 45px;
   padding-bottom: 80px;
   background-size: 218px auto;
-  background-position: 8.7% 51px;
+  background-position: 9.3% 51px;
   background-repeat: no-repeat;
 
   &::before {
@@ -58,7 +58,6 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
-  box-sizing: border-box;
 }
 
 .about-company p:last-of-type {
@@ -100,7 +99,9 @@
     padding-top: 5px;
     padding-bottom: 53px;
     background-size: 250px auto;
-    background-position: -8px 5px;
+    background-position: -32px 4px;
+    padding-left: 5px;
+    padding-right: 5px;
 
     &::before {
       display: none;
@@ -108,7 +109,7 @@
   }
 
   .about-company h2 {
-    margin-left: 185px;
+    margin-left: 181px;
     margin-bottom: 25px;
     font-size: 32px;
     line-height: 45px;
@@ -116,7 +117,7 @@
 
   .about-company p {
     display: block;
-    margin-left: 188px;
+    margin-left: 184px;
     padding-right: 0;
   }
 
@@ -129,17 +130,18 @@
   }
 
   .about-company__button {
-    margin-top: 40px;
-    margin-left: 189px;
+    margin-top: 18px;
+    margin-left: 184px;
   }
 }
 
 @media (max-width: $tablet-width) {
   .about-company {
     width: 100%;
-    box-sizing: border-box;
     padding-top: 6px;
     padding-bottom: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .no-webp .about-company,

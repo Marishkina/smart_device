@@ -56,18 +56,18 @@
 
 .no-webp .page-header__wrapper-block::before,
 .no-js .page-header__wrapper-block::before {
-  background-image: url("../img/motherboard-desktop@1x.png"), url("../img/2-triangle.svg");
+  background-image: url("../img/motherboard@1x.png"), url("../img/2-triangle.svg");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/motherboard-desktop@2x.png"), url("../img/2-triangle.svg");
+    background-image: url("../img/motherboard@2x.png"), url("../img/2-triangle.svg");
   }
 }
 
 .webp .page-header__wrapper-block::before {
-  background-image: url("../img/motherboard-desktop@1x.webp"), url("../img/2-triangle.svg");
+  background-image: url("../img/motherboard@1x.webp"), url("../img/2-triangle.svg");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/motherboard-desktop@2x.webp"), url("../img/2-triangle.svg");
+    background-image: url("../img/motherboard@2x.webp"), url("../img/2-triangle.svg");
   }
 }
 
@@ -349,7 +349,6 @@
   }
 
   .page-header__wrapper-block {
-    width: 720px;
     margin: 0 auto;
     padding-bottom: 0;
     margin-bottom: 117px;
@@ -358,9 +357,9 @@
       top: 44px;
       width: 700px;
       height: 420px;
-      margin-left: -25px;
-      background-size: 261px 344px, 700px 384px;
-      background-position: 150px 50px, -12px 21px;
+      margin-left: 7%;
+      background-size: 469px 341px, 700px 384px;
+      background-position: 76px 51px, -86px 21px;
       background-repeat: no-repeat, no-repeat;
     }
 
@@ -370,28 +369,12 @@
     }
   }
 
-  .no-webp .page-header__wrapper-block::before,
-  .no-js .page-header__wrapper-block::before {
-    background-image: url("../img/motherboard-tablet@1x.png"), url("../img/2-triangle.svg");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/motherboard-tablet@2x.png"), url("../img/2-triangle.svg");
-    }
-  }
-
-  .webp .page-header__wrapper-block::before {
-    background-image: url("../img/motherboard-tablet@1x.webp"), url("../img/2-triangle.svg");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/motherboard-tablet@2x.webp"), url("../img/2-triangle.svg");
-    }
-  }
 
   .page-header__mail {
     width: 26px;
     height: 19px;
     margin-top: 18px;
-    margin-left: 435px;
+    margin-left: 60.6%;
     padding-right: 0;
 
     &::after {
@@ -501,7 +484,6 @@
   }
 
   .page-header__wrapper-block {
-    width: 100%;
     margin-bottom: 0;
     padding-bottom: 231px;
 
@@ -516,27 +498,10 @@
       width: 1000px;
       height: 400px;
       margin-left: -139px;
-      background-position: 4px 40px, -16px 18px;
-      background-size: 295px 220px, 786px 367px;
+      background-position: 5px 40px, -16px 18px;
+      background-size: 301px 220px, 786px 367px;
       background-repeat: no-repeat, no-repeat;
       z-index: 1;
-    }
-  }
-
-  .no-webp .page-header__wrapper-block::before,
-  .no-js .page-header__wrapper-block::before {
-    background-image: url("../img/motherboard-mobile@1x.png"), url("../img/2-triangle.svg");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/motherboard-mobile@2x.png"), url("../img/2-triangle.svg");
-    }
-  }
-
-  .webp .page-header__wrapper-block::before {
-    background-image: url("../img/motherboard-mobile@1x.webp"), url("../img/2-triangle.svg");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/motherboard-mobile@2x.webp"), url("../img/2-triangle.svg");
     }
   }
 
@@ -583,7 +548,6 @@
 
   .page-header__proposal h1 {
     position: relative;
-    min-width: 100%;
     margin-bottom: 27px;
     margin-left: -63px;
     font-size: 40px;
