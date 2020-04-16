@@ -4,7 +4,6 @@
   padding-bottom: 80px;
   background-size: 218px auto;
   background-position: 9.3% 51px;
-  // background-position: 8.7% 51px;
   background-repeat: no-repeat;
 
   &::before {
@@ -45,7 +44,10 @@
   margin-left: 21.7%;
   margin-bottom: 20px;
   font-size: 36px;
+  font-weight: 600;
+  font-style: normal;
   line-height: 51px;
+  color: $text-color;
 }
 
 .about-company p {
@@ -157,10 +159,8 @@
   .about-company h2 {
     margin-left: 0;
     margin-bottom: 21px;
-    font-weight: normal;
     font-size: 28px;
     line-height: 39px;
-    color: $text-color;
   }
 
   .about-company p {

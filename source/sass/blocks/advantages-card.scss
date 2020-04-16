@@ -40,7 +40,6 @@
 
 .advantages-card h2 {
   @include roboto;
-  width: 310px;
   margin-top: 19px;
   margin-bottom: 16px;
   font-size: 24px;
@@ -92,7 +91,6 @@
   }
 
   .advantages-card h2 {
-    width: 310px;
     margin-top: 6px;
     margin-bottom: 8px;
   }
@@ -117,7 +115,7 @@
   }
 
   .advantages-card h2 {
-    width: 245px;
+    width: 92%;
     margin-top: 11px;
     margin-bottom: 10px;
     font-size: 20px;
