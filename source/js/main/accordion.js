@@ -7,6 +7,7 @@
       $('.sub__list').css('display', 'flex');
     } else {
       $('.sub__list').css('display', 'none');
+      $('.footer__accordion-link').removeClass('active');
     }
   });
 
